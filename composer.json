@@ -1,0 +1,41 @@
+{
+    "name": "urbanmonastics/sourcetextlibrary",
+    "description": "A simple way to load, read, and present texts from various source text libraries.",
+    "keywords": ["markdown", "parser", "liturgy", "bible", "scripture"],
+    "homepage": "http://developers.urbanmonastic.org/source-text-library/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Prins",
+            "role": "Developer",
+            "homepage": "https://paul.build/",
+            "email": "paulprins@gmail.com"
+        },
+        {
+            "name": "Urban Monastics",
+            "homepage": "https://developers.urbanmonastic.org/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "ext-mbstring": "*",
+        "urbanmonastics/sourceparser": "^0.4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8.35"
+    },
+    "autoload": {
+        "psr-4": {"UrbanMonastics\\SourceTextLibrary\\": ""},
+        "exclude-from-classmap": [
+            "/docker/",
+            "/test/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "TestSourceTextLibrary": "test/",
+            "SourceTextLibraryTest": "test/"
+        }
+    }
+}
