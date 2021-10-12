@@ -12,7 +12,8 @@ services:
       - ./:/var/www/html
       - ./docker/nginx/error.log:/var/log/nginx/error.log
       - ./docker/nginx/access.log:/var/log/nginx/access.log
-      - ./../Source-Texts:/var/www/html/Source-Texts
+      - ./../Monastic-Text-Library:/var/www/html/Monastic-Text-Library
+      - ./../Christian-Scripture-Library:/var/www/html/Christian-Scripture-Library
     environment:
       APP_ENV: development
       ERRORS: 1
