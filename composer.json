@@ -20,13 +20,14 @@
     "require": {
         "php": ">=7.0.0",
         "ext-mbstring": "*",
-        "urbanmonastics/sourceparser": "^0.4.1"
+        "urbanmonastics/sourcetextparser": "^0.4.1"
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.8.35"
     },
     "autoload": {
         "psr-4": {"UrbanMonastics\\SourceTextLibrary\\": ""},
+        "classmap": ["Controllers/", "Models/"],
         "exclude-from-classmap": [
             "/docker/",
             "/test/"
