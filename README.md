@@ -4,17 +4,27 @@
 [![Version](https://poser.pugx.org/urbanmonastics/sourcetextlibrary/v/stable.svg)](https://packagist.org/packages/urbanmonastics/sourcetextlibrary)
 [![License](https://poser.pugx.org/urbanmonastics/sourcetextlibrary/license.svg)](https://packagist.org/packages/urbanmonastics/sourcetextlibrary)
 
-A simple way to load, read, and present texts from various Source Text libraries.
+Easily create robust libraries of versioned texts. The Source Texts Library creates a simple programatic interface layer for indexing, accessing, and formatting texts (using markdown extended by the [Source Text Parser](https://github.com/UrbanMonastics/Source-Text-Parser) library).
 
-This is a companion library to the [Source Text Parser](https://github.com/UrbanMonastics/Source-Text-Parser) library.
+## Project Goals
+
+*	Provide a common format for large libraries of texts.
+*	Use JSON instead of XML for easier parsing and structuring.
+*	Easily support multiple versions of the same texts.
+*	Include helpful metadata alongside texts.
+*	Allow for easy use of multiple libraries in projects to encourage collaboration.
 
 
-## Features
+## Documentation
 
-*   Quickly load one or many source text libraries  
-*   Navigate to desired texts or segments and render them for display.  
-*   
-
+*  [Getting Started]()
+*  [Libraries: How they Work](Docs/Libraries.md)
+    *  [Collections](Docs/Collections.md)
+*  [Versions](Docs/Versions.md)
+*  [Source Files](Docs/Sources.md)
+*  [Texts, Chapters, and other Segments](Docs/Texts.md)
+*  [Dictionaries]()
+*  [Languages](Docs/Languages.md)
 
 
 
