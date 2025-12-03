@@ -9,24 +9,13 @@ class SourceTextLibraryTest extends TestCase
 {
     final function __construct($name = null, array $data = array(), $dataName = '')
     {
-        $this->dirs = $this->initDirs();
         $this->SourceTextLibrary = $this->initSourceTextLibrary();
 
         parent::__construct($name, $data, $dataName);
     }
 
-    private $dirs;
     protected $SourceTextLibrary;
 
-    /**
-     * @return array
-     */
-    protected function initDirs()
-    {
-        $dirs []= dirname(__FILE__).'/data/';
-
-        return $dirs;
-    }
 
     /**
      * @return SourceTextLibrary
@@ -107,11 +96,12 @@ class SourceTextLibraryTest extends TestCase
         $this->assertEquals($expectedSafeMarkup, $actualSafeMarkup);
     }
 
-    function data()
+    public static function data()
     {
         $data = array();
+        $dirs = array(dirname(__FILE__).'/data/');
 
-        foreach ($this->dirs as $dir)
+        foreach ($dirs as $dir)
         {
             $Folder = new DirectoryIterator($dir);
 
