@@ -28,7 +28,7 @@ use UrbanMonastics\SourceTextParser\SourceTextParser;
 
 
 class SourceTextLibrary{
-	const version = '0.2.1';
+	const version = '0.2.2';
 
 	/* -- Variables for Source Texts -- */
 	protected $Source;			// This is the source.json file as an Object
